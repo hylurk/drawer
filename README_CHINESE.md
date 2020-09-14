@@ -1,24 +1,24 @@
 # drawer
 
-**English** | **[简体中文](https://github.com/hylurk/drawer/blob/master/README_CHINESE.md)**
+**[English](https://github.com/hylurk/drawer/blob/master/README.md)** | **简体中文**
 
-A cascaded drawer UI component for mobile.
+一款适用于 M 端的级联抽屉 UI 组件。
 
-## Installation
+## 安装
 
 ```shell
 npm install @lurk/drawer
 ```
 
-or
+或
 
 ```shell
 yarn add @lurk/drawer
 ```
 
-## Demo
+## 示例
 
-You can use it like this :
+你可以像下面这样使用它:
 
 **html**
 
@@ -60,4 +60,6 @@ document.querySelector('#btn').addEventListener('click', function () {
 ## License
 
 [MIT](https://github.com/hylurk/drawer/blob/master/LICENSE)
+
+
 

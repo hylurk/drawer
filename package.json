@@ -1,0 +1,52 @@
+{
+  "name": "@lurk/drawer",
+  "version": "0.0.2-beta",
+  "description": "A cascaded drawer UI component for mobile.",
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --watch",
+    "build": "rimraf ./dist && cross-env NODE_ENV=production webpack --mode=production --progress --display-error-details --colors",
+    "tsc": "tsc -p tsconfig.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hylurk/drawer"
+  },
+  "author": "jeff_yang",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/plugin-transform-modules-commonjs": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
+    "@babel/runtime": "^7.11.2",
+    "autoprefixer": "^9.8.6",
+    "awesome-typescript-loader": "^5.2.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.2.2",
+    "cssnano": "^4.1.10",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.11.0",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^3.0.0",
+    "progress-bar-webpack-plugin": "^2.1.0",
+    "sass-loader": "^10.0.1",
+    "source-map-loader": "^1.0.2",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF_8"/>
+    <meta name="referrer" content="never">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <title>Drawer-demo</title>
+  </head>
+  <body>
+    <div id="wrapper"></div>
+    <button id="btn">Click Me</button>
+  </body>
+  <script>
+    const drawer = new Drawer({
+      wrapper: '#wrapper',
+      levels: [
+        {
+          title: 'Choose Province',
+        },
+        {
+          title: 'Choose City',
+        },
+        {
+          title: 'Choose County',
+        }
+      ]
+    })
+    document.querySelector('#btn').addEventListener('click', function () {
+      drawer.show()
+    })
+  </script>
+</html>
